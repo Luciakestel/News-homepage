@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "name": "news-homepage",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luciakestel/News-homepage.git"
+  },
+  "keywords": [],
+  "author": "Lucia Kestel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luciakestel/News-homepage/issues"
+  },
+  "homepage": "https://github.com/Luciakestel/News-homepage#readme"
+}

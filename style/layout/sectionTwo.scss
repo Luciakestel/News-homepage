@@ -1,0 +1,40 @@
+.sectionTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: $dark-blue;
+  margin: 20px;
+  padding: 10px;
+
+  &_title {
+    color: $soft-orange;
+    font-size: 35px;
+    margin: 10px;
+  }
+  &_container {
+    margin: 5px;
+    // padding: 10px;
+    border-bottom: 1px solid $grayish-blue;
+
+    &_title {
+      color: $off-white;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    &_text {
+      color: $grayish-blue;
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      line-height: 18px;
+      padding: 5px;
+    }
+  }
+  &_container3 {
+    margin: 5px;
+    padding: 10px;
+  }
+}

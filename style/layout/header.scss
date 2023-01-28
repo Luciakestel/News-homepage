@@ -20,10 +20,35 @@
     width: 30px;
     margin-top: 5px;
   }
-  &_hamb_close {
-    background-image: url('../../images/icon-menu-close.svg');
-    background-repeat: no-repeat;
-    width: 30px;
-    display: none;
+  &_menu {
+    position: absolute;
+    right: 0;
+    width: 260px;
+    min-height: 100vh;
+    background-color: white;
+    &_close {
+      background-image: url('../../images/icon-menu-close.svg');
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 20px;
+    }
+    &-list {
+      position: absolute;
+      top: 120px;
+      &-element {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        line-height: 45px;
+      }
+    }
   }
+}
+.inactive {
+  display: none;
 }

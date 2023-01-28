@@ -158,10 +158,36 @@ table {
   width: 30px;
   margin-top: 5px;
 }
-.header_hamb_close {
+.header_menu {
+  position: absolute;
+  right: 0;
+  width: 260px;
+  min-height: 100vh;
+  background-color: white;
+}
+.header_menu_close {
   background-image: url("../../images/icon-menu-close.svg");
-  background-repeat: no-repeat;
   width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+}
+.header_menu-list {
+  position: absolute;
+  top: 120px;
+}
+.header_menu-list-element {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  line-height: 45px;
+}
+
+.inactive {
   display: none;
 }
 
@@ -201,6 +227,78 @@ table {
   padding: 10px 35px 10px 35px;
   border: none;
   letter-spacing: 5px;
+}
+
+.sectionTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: hsl(240deg, 100%, 5%);
+  margin: 20px;
+  padding: 10px;
+}
+.sectionTwo_title {
+  color: hsl(35deg, 77%, 62%);
+  font-size: 35px;
+  margin: 10px;
+}
+.sectionTwo_container {
+  margin: 5px;
+  border-bottom: 1px solid hsl(233deg, 8%, 79%);
+}
+.sectionTwo_container_title {
+  color: hsl(36deg, 100%, 99%);
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.sectionTwo_container_text {
+  color: hsl(233deg, 8%, 79%);
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 18px;
+  padding: 5px;
+}
+.sectionTwo_container3 {
+  margin: 5px;
+  padding: 10px;
+}
+
+.sectionThree {
+  margin: 10px;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+.sectionThree_article {
+  display: flex;
+  padding: 10px;
+}
+.sectionThree_article_img {
+  width: 130px;
+  height: 150px;
+}
+.sectionThree_article_container {
+  margin-left: 20px;
+}
+.sectionThree_article_container_title {
+  font-weight: bold;
+  font-size: 30px;
+  color: hsl(236deg, 13%, 42%);
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+.sectionThree_article_container_subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.sectionThree_article_container_text {
+  color: hsl(236deg, 13%, 42%);
+  font-size: 14px;
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

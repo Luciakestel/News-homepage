@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/screenshot.jpg)
 
 ### Links
 
-- Solution URL: [https://github.com/Luciakestel/News-homepage]
-- Live Site URL: [https://luciakestel.github.io/News-homepage/]
+- Solution URL: https://github.com/Luciakestel/News-homepage
+- Live Site URL: https://luciakestel.github.io/News-homepage/
 
 ## My process
 

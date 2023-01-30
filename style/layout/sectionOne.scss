@@ -1,7 +1,9 @@
 .main {
-  display: grid;
-  grid-template-areas: 'a b' 'a b' 'c c ';
-  margin: 0px 150px 100px 150px;
+  @include desktop {
+    display: grid;
+    grid-template-areas: 'a b' 'a b' 'c c ';
+    margin: 0px 150px 100px 150px;
+  }
 }
 .sectionOne {
   display: flex;

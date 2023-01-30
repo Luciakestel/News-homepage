@@ -221,10 +221,12 @@ table {
   color: hsl(5deg, 85%, 63%);
 }
 
-.main {
-  display: grid;
-  grid-template-areas: "a b" "a b" "c c ";
-  margin: 0px 150px 100px 150px;
+@media all and (min-width: 1440px) {
+  .main {
+    display: grid;
+    grid-template-areas: "a b" "a b" "c c ";
+    margin: 0px 150px 100px 150px;
+  }
 }
 
 .sectionOne {

@@ -2,9 +2,15 @@
   margin: 10px;
   padding-bottom: 20px;
   padding-top: 15px;
+  grid-area: c;
+  @include desktop {
+    display: flex;
+    margin-top: 50px;
+  }
   &_article {
     display: flex;
     padding: 10px;
+
     &_img {
       width: 130px;
       height: 150px;
@@ -31,4 +37,7 @@
       }
     }
   }
+}
+.sectionThree_article_container_subtitle:hover {
+  color: $soft-red;
 }

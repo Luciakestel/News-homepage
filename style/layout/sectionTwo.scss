@@ -6,16 +6,28 @@
   background-color: $dark-blue;
   margin: 20px;
   padding: 10px;
+  grid-area: b;
+  @include desktop {
+    position: absolute;
+    top: 185px;
+    right: 150px;
+    width: 400px;
+  }
 
   &_title {
     color: $soft-orange;
     font-size: 35px;
     margin: 10px;
+    @include desktop {
+      font-weight: bold;
+    }
   }
   &_container {
     margin: 5px;
     // padding: 10px;
     border-bottom: 1px solid $grayish-blue;
+    @include desktop {
+    }
 
     &_title {
       color: $off-white;
@@ -23,6 +35,9 @@
       letter-spacing: 1px;
       margin-top: 15px;
       margin-bottom: 15px;
+      @include desktop {
+        font-style: 25px;
+      }
     }
     &_text {
       color: $grayish-blue;
@@ -31,10 +46,17 @@
       margin-bottom: 20px;
       line-height: 18px;
       padding: 5px;
+      @include desktop {
+        font-size: 18px;
+      }
     }
   }
   &_container3 {
     margin: 5px;
     padding: 10px;
   }
+}
+
+.sectionTwo_container_title:hover {
+  color: $soft-orange;
 }

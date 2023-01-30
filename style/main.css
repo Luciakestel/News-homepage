@@ -142,21 +142,47 @@ table {
   justify-content: space-between;
   padding: 20px;
 }
+@media all and (min-width: 1440px) {
+  .header {
+    margin: 100px 150px 0 150px;
+  }
+}
 .header_img {
   width: 35px;
   height: 25px;
 }
+@media all and (min-width: 1440px) {
+  .header_img {
+    width: 50px;
+    height: 40px;
+  }
+}
 .header_nav {
   display: none;
 }
+@media all and (min-width: 1440px) {
+  .header_nav {
+    display: flex;
+  }
+}
+.header_nav-list {
+  display: flex;
+}
 .header_nav-list-element {
   font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: hsl(233deg, 8%, 79%);
 }
 .header_hamb {
   background: url("../../images/icon-menu.svg");
   background-repeat: no-repeat;
   width: 30px;
   margin-top: 5px;
+}
+@media all and (min-width: 1440px) {
+  .header_hamb {
+    display: none;
+  }
 }
 .header_menu {
   position: absolute;
@@ -191,12 +217,27 @@ table {
   display: none;
 }
 
+.header_menu-list-element:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+
+.main {
+  display: grid;
+  grid-template-areas: "a b" "a b" "c c ";
+  margin: 0px 150px 100px 150px;
+}
+
 .sectionOne {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 10px;
+}
+@media all and (min-width: 1440px) {
+  .sectionOne {
+    grid-area: a;
+  }
 }
 .sectionOne_img {
   background-image: url("../../images/image-web-3-mobile.jpg");
@@ -206,19 +247,47 @@ table {
   height: 300px;
   margin: 10px auto;
 }
-.sectionOne_title {
+@media all and (min-width: 1440px) {
+  .sectionOne_img {
+    background-image: url("../../images/image-web-3-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 750px;
+    height: 270px;
+  }
+}
+@media all and (min-width: 1440px) {
+  .sectionOne_container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.sectionOne_container_title {
   font-weight: bold;
   font-size: 40px;
   margin: 10px;
 }
-.sectionOne_text {
+@media all and (min-width: 1440px) {
+  .sectionOne_container_title {
+    width: 300px;
+    font-size: 50px;
+    margin-top: 20px;
+  }
+}
+.sectionOne_container_text {
   font-size: 15px;
   margin-right: 10px;
   margin-left: 10px;
   color: hsl(236deg, 13%, 42%);
   line-height: 25px;
 }
-.sectionOne_btn {
+@media all and (min-width: 1440px) {
+  .sectionOne_container_text {
+    margin-top: 20px;
+    width: 350px;
+  }
+}
+.sectionOne_container_btn {
   font-weight: bold;
   color: hsl(36deg, 100%, 99%);
   background-color: hsl(5deg, 85%, 63%);
@@ -227,6 +296,16 @@ table {
   padding: 10px 35px 10px 35px;
   border: none;
   letter-spacing: 5px;
+}
+@media all and (min-width: 1440px) {
+  .sectionOne_container_btn {
+    padding: 10px 25px 10px 25px;
+    margin-top: 30px;
+  }
+}
+
+.sectionOne_container_btn:hover {
+  background-color: hsl(240deg, 100%, 5%);
 }
 
 .sectionTwo {
@@ -237,11 +316,25 @@ table {
   background-color: hsl(240deg, 100%, 5%);
   margin: 20px;
   padding: 10px;
+  grid-area: b;
+}
+@media all and (min-width: 1440px) {
+  .sectionTwo {
+    position: absolute;
+    top: 185px;
+    right: 150px;
+    width: 400px;
+  }
 }
 .sectionTwo_title {
   color: hsl(35deg, 77%, 62%);
   font-size: 35px;
   margin: 10px;
+}
+@media all and (min-width: 1440px) {
+  .sectionTwo_title {
+    font-weight: bold;
+  }
 }
 .sectionTwo_container {
   margin: 5px;
@@ -254,6 +347,11 @@ table {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+@media all and (min-width: 1440px) {
+  .sectionTwo_container_title {
+    font-style: 25px;
+  }
+}
 .sectionTwo_container_text {
   color: hsl(233deg, 8%, 79%);
   font-size: 15px;
@@ -262,15 +360,31 @@ table {
   line-height: 18px;
   padding: 5px;
 }
+@media all and (min-width: 1440px) {
+  .sectionTwo_container_text {
+    font-size: 18px;
+  }
+}
 .sectionTwo_container3 {
   margin: 5px;
   padding: 10px;
+}
+
+.sectionTwo_container_title:hover {
+  color: hsl(35deg, 77%, 62%);
 }
 
 .sectionThree {
   margin: 10px;
   padding-bottom: 20px;
   padding-top: 15px;
+  grid-area: c;
+}
+@media all and (min-width: 1440px) {
+  .sectionThree {
+    display: flex;
+    margin-top: 50px;
+  }
 }
 .sectionThree_article {
   display: flex;
@@ -299,6 +413,14 @@ table {
   color: hsl(236deg, 13%, 42%);
   font-size: 14px;
   line-height: 20px;
+}
+
+.sectionThree_article_container_subtitle:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+
+.footer {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

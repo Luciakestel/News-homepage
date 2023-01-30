@@ -1,6 +1,7 @@
-@import 'variables';
-@import 'reset';
-@import './layout/header';
+@import './core/reset.scss';
+@import './core/variables.scss';
+@import './core/responsive.scss';
+@import './layout/header.scss';
 @import './layout/sectionOne.scss';
 @import './layout/sectionTwo.scss';
 @import './layout/sectionThree.scss';

@@ -2,15 +2,29 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  @include desktop {
+    margin: 100px 150px 0 150px;
+  }
+
   &_img {
     width: 35px;
     height: 25px;
+    @include desktop {
+      width: 50px;
+      height: 40px;
+    }
   }
   &_nav {
     display: none;
+    @include desktop {
+      display: flex;
+    }
     &-list {
+      display: flex;
       &-element {
         font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        color: $grayish-blue;
       }
     }
   }
@@ -19,6 +33,9 @@
     background-repeat: no-repeat;
     width: 30px;
     margin-top: 5px;
+    @include desktop {
+      display: none;
+    }
   }
   &_menu {
     position: absolute;
@@ -51,4 +68,8 @@
 }
 .inactive {
   display: none;
+}
+
+.header_menu-list-element:hover {
+  color: $soft-red;
 }

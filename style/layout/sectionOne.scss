@@ -16,18 +16,21 @@
   }
 
   &_img {
-    background-image: url('../../images/image-web-3-mobile.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 350px;
-    height: 300px;
-    margin: 10px auto;
-    @include desktop {
-      background-image: url('../../images/image-web-3-desktop.jpg');
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 750px;
-      height: 270px;
+    &_mobile {
+      width: 350px;
+      height: 300px;
+      margin: 10px auto;
+      @include desktop {
+        display: none;
+      }
+    }
+    &_desktop {
+      display: none;
+      @include desktop {
+        display: block;
+        width: 650px;
+        height: 270px;
+      }
     }
   }
   &_container {
@@ -38,7 +41,6 @@
     &_title {
       font-weight: bold;
       font-size: 40px;
-      margin: 10px;
       @include desktop {
         width: 300px;
         font-size: 50px;
